@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	font-family:	Arial;
+}
+#fullOutput, #shortOutput {
+	margin: 	0 auto;
+	width: 		474px;
+}
+
+#shortOutput {
+	margin-top:10px;
+	margin-bottom: 30px;
+	font-size: 13px;
+}
+#topForm input[type="text"]{
+	border: 			1px solid #bfbfbf;
+	border-radius: 		3px 3px 3px 3px;
+	box-shadow: 		0 0 0 #000000, 0 3px 3px #eeeeee inset;
+	padding: 			4px;
+	margin-left: 		10px;
+	font-size: 			14px;
+	width: 				300px;
+	margin-bottom: 		12px;
+}
+#topForm input[type="button"]{
+	border: 		1px solid #bfbfbf;
+	border-radius: 	3px 3px 3px 3px;
+	box-shadow: 	0 0 0 #000000, 0 3px 3px #eeeeee inset;
+	padding: 		3px;
+	margin-left: 	10px;
+	font-size: 		14px;
+	margin-bottom: 	12px;
+}
+
+#topForm input[type="button"]:hover{
+	-moz-box-shadow:		inset 0px 1px 0px rgba(61,70,71,0.1);
+	-webkit-box-shadow:		inset 0px 1px 0px rgba(61,70,71,0.1);
+	box-shadow:				0 0 0 #000000, 0 3px 3px #bfbfbf inset;
+	cursor: 				pointer;
+}
+
+span.center { 
+	text-align:center; 
+	display:block; 
+}
+.previewThumb {
+	position:relative;
+	float:left;
+	clear:left;
+	margin-top:15px;
+	width: 100%;
+}
+.previewThumb img { 
+	width: 200px; 
+	vertical-align:middle;
+} 
+.toggle { 
+	width: 100%;
+	height:50px; 
+	position:relative; 
+	float:left;
+}
+#topForm, #header, #footer {
+	margin: 		0 auto;
+	width: 			474px;
+	text-align:		center;
+	margin-top:		25px;
+}
+
+#footer { font-size:10px;}
+
+#logo {
+	width: 200px;
+	height:92px;
+
+}
+a, a:hover, a:visited {
+	color: #7a7a00;
+	text-decoration:none;
+}
+a:hover { 
+	text-decoration: underline; 
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="tvde.js"></script>
+</head>
+<body>
+    <center>
+    <h1>Twitter Video Data Extractor</h1>
+    <br>
+    <hr>
+    <br>
+    <h3>
+        <p>
+        <div id="topForm">
+            <input type="text" id="url" size="70" title="Enter Twitter Video URL">
+            <button id="extract"><b>Extract Data</b></button>
+            <button id="clear"><b>Clear</b></button>
+            </p>
+        </div>
+        <p id="created_at_date"></p>
+        <p id="video_description"></p>
+        <div id="tvde-0"></div>
+        <div id="tvde-1"></div>
+        <div id="tvde-2"></div>
+        <div id="tvde-3"></div>
+        <div id="tvde-4"></div>
+        <div id="tvde-5"></div>
+        <div id="tvde-6"></div>
+        <div id="tvde-7"></div>
+    </h3>
+</center>
+</body>
+</html>
